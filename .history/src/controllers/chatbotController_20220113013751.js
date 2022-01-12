@@ -62,7 +62,6 @@ function handleMessage(sender_psid, received_message) {
     // Check if the message contains text
     if (received_message.text) {
         // Create the payload for a basic text message
-        console.log("cc",received_message.text)
         response = {
             text: `You sent the message: "${received_message.text}". Now send me an image!`,
         };
